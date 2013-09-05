@@ -1,0 +1,5 @@
+SETUP:
+	Make sure you have npm installed and then run 'npm install' in the root of this dir
+
+RUNNING:
+	just do 'node nsrv.js'
