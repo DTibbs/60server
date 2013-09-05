@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#comment {
+  width: 128px;
+  height: 60px;
+  resize: none;
+}
+</style>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="test.js"></script>
+<meta charset=utf-8 />
+<title>60 characters!</title>
+</head>
+<body>
+  <form name="input">
+  <textarea id="comment" type="text" maxlength="60" wrap="true"></textarea>
+  <div id="charlimitinfo">You have 60 characters left.</div>
+  <input id="submit" type="button" value="Submit">
+  </form>
+</body>
+</html>
