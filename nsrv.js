@@ -38,8 +38,9 @@ app.post('/', function(req, res){
 	res.send('Thanks!');
 })
 
-app.listen(3000);
-console.log('Listening on port 3000');
+var portNum = 6060
+app.listen(portNum);
+console.log('Listening on port ' + portNum);
 
 
 //var server = http.createServer(function(req, res) {
