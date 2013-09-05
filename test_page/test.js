@@ -17,14 +17,12 @@ $(function(){
     $('#comment').keyup(function(){
         limitChars('comment', 60, 'charlimitinfo');
     });
-    $('#submit').click(function(){
-        $.post(
-            "http://127.0.0.1:3000/",
-            { sixty: $('#comment').html()},
-            function(data) {
-                $('#comment').html(data);
-            }
-        );
-    });
+//    $('#submit').click(function(){
+//        var msg = $('#comment').val();
+//        $.post("http://127.0.0.1:3000/",
+//                { req.body.msg: msg },
+//                function() { alert("Thanks!"); },
+//                "json");
+//    });
 });
 

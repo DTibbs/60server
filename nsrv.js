@@ -23,15 +23,18 @@ if(request.method === "POST") {
 }
 */
 
+var util = require("util");
 var express = require('express');
 var app = express();
 
-app.get('/', function(req, res){
-	res.send('Thanks!');
-});
+//app.get('/', function(req, res){
+//	res.send('Thanks!');
+//});
+
+app.use(express.bodyParser());
 
 app.post('/', function(req, res){
-	console.log('got post of ' + req.sixty);
+	console.log('got post of ' + req.body.comment);//util.inspect(req, false, null));
 	res.send('Thanks!');
 })
 
