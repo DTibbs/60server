@@ -15,10 +15,17 @@
 <title>60 characters!</title>
 </head>
 <body>
-  <form action="http://127.0.0.1:3000/" method="post">
+	<H2>Submit wishes, memories, etc.</H2>
+  <form action="http://127.0.0.1:6060/sixty:" method="post">
   <textarea name="comment" id="comment" type="text" maxlength="60" wrap="true"></textarea><BR>
   <input type="submit" value="Submit">
   </form>
   <div id="charlimitinfo">You have 60 characters left.</div>
+  <BR>
+  	<H2>Submit photos, images of the number 60 in various locations:</H2>
+  	<form action="http://127.0.0.1:6060/img" enctype="multipart/form-data" method="post">
+    <input type="file" name="upload" multiple="multiple"><br>
+    <input type="submit" value="Upload">
+    </form>
 </body>
 </html>
